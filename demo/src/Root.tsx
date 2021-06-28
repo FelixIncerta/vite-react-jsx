@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
 // This local package uses the automatic JSX runtime in a .jsx module
-import One from 'react-one'
+// import One from 'react-one'
 
 // This local package uses `import React from 'react'` in a .tsx module
-import Two from 'react-two'
+// import Two from 'react-two'
 
 // This package has a minified CJS entry point and a development module
 import { Switch } from './deps'
@@ -16,9 +16,10 @@ export const Root = () => {
   const [checked, setChecked] = useState(false)
   return (
     <>
-      <One />
-      <Two />
-      <Switch checked={checked} onChange={setChecked} />
+      <div>test</div>
+      {/* <One />
+      <Two /> */}
+      {/* <Switch checked={checked} onChange={setChecked} /> */}
       <FileZone />
     </>
   )
